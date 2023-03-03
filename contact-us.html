@@ -27,51 +27,41 @@
             <a href="gallery.html">Gallery</a> |
             <a href="contact-us.html">Contact Us</a>
         </nav>
+        <p>Questions to the guy who created this Website? Or a Feedback?</p>
+        <p>Contact us here using Dallas College email and send us a Message. </p>
 
-        <div>
-            <p>Questions to the guy who created this Website? Or a Feedback?</p>
-            <p>Contact us here using Dallas College email and send us a Message. </p>
-
+        <div class="form">
             <form id="myMailerForm" action="mailto:e3339006@student.dcccd.edu" method="post">
                 <fieldset>
                     <legend>Contact Us</legend>
-                    <p>
-                        <label title="Enter Last name"> Last Name: <input type="text" name="lastname"></label>
 
-                    </p>
-                    <p>
+                    <label title="Enter Last name"> Last Name: <input type="text" name="lastname"></label>
+                    <label title="Enter First Name"> First Name: <input type="text" name="firstname"></label>
 
-                        <label title="Enter First Name"> First Name: <input type="text" name="firstname"></label>
-                    </p>
-                    <p>
-                        <label title="Enter your email address">E-mail: <input type="text" name="Email"
-                                placeholder="email" required></label>
+                    <label title="Enter your email address">E-mail: <input type="text" name="Email" placeholder="email"
+                            required></label>
 
-                    </p>
-                    <p>
-                        <!--Missing form label and orphaned form label-->
-                        <!--putting radio type element on label as a group Does not work-->
-                        <!--label on on each radio type input-->
-                        How would you rate our website?<br> 
-                        
-                         <label title="Very funny"><input type="radio" name="rate" value="1">Bad | </label>
-                         <label title="Rate this website"><input type="radio" name="rate" value="2">Meh | </label>
-                         <label title="Rate this website"><input type="radio" name="rate" value="3">Average | </label>
-                         <label title="Rate this website"><input type="radio" name="rate" value="4">Good | </label>
-                         <label title="Rate this website"><input type="radio" name="rate" value="5">Solid | </label>
-                        
-                    </p>
-                    <p>
-                        <label for="message"> Message</label><br>
-                        <textarea id="message" name="message"></textarea>
-                    </p>
+                    <!--Missing form label and orphaned form label-->
+                    <!--putting radio type element on label as a group Does not work-->
+                    <!--label on on each radio type input-->
+                    How would you rate our website?<br>
+                    <label title="Very funny"><input type="radio" name="rate" value="1">Bad | </label>
+                    <label title="Rate this website"><input type="radio" name="rate" value="2">Meh | </label>
+                    <label title="Rate this website"><input type="radio" name="rate" value="3">Average | </label>
+                    <label title="Rate this website"><input type="radio" name="rate" value="4">Good | </label>
+                    <label title="Rate this website"><input type="radio" name="rate" value="5">Solid | </label><br>
+
+                    <label for="message"> Message</label><br>
+                    <textarea id="message"  name="message"></textarea><br>
+
                     <input type="submit" name="submit" value="Send Mail">
                     <input type="reset" name="reset" value="Reset Info">
+
                 </fieldset>
             </form>
         </div>
         <footer>
-            <nav id="footer">
+            <nav>
                 <a id="footer" href="https://www.dallascollege.edu/pages/default.aspx">Link Dallas College</a>
                 <br>
                 <a id="footer" href="mailto:e3339006@dallascollege.edu">email to Webmaster</a>

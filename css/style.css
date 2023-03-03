@@ -16,28 +16,11 @@ nav {
    font-family: "Tilt Neon", "Monospace", Verdana, sans-serif;
 }
 
-#i{
-   color: #282829;
+p {
+   text-align: center;
+   margin-left: auto;
+   margin-right: auto;
 }
-
-#footer {
-   color: white;
-   font-size: 15px;
-   text-decoration: none;
-   text-align: left;
-}
-
-a {
-   text-decoration: none;
-   color: white;
-   font-size: 20px;
-   letter-spacing: 3px;
-}
-
-div{
-   color: #282829;
-}
-
 
 h2 {
    background-color: #282829;
@@ -56,6 +39,40 @@ h3 {
    color: #282829;
 }
 
+a {
+   text-decoration: none;
+   color: white;
+   font-size: 20px;
+   letter-spacing: 3px;
+}
+#websitestore, #faq {
+   color: #282829;
+   background: #fcde83;
+   border: 2px solid #282829;
+   padding: 10px 20px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+}
+
+#faq:hover {
+   background-color: #dfc472;
+}
+
+
+#footer {
+   color: white;
+   font-size: 15px;
+   text-decoration: none;
+   text-align: left;
+}
+
+div {
+   color: #282829;
+}
+
+
 div.container {
    text-align: center;
 }
@@ -65,19 +82,6 @@ div.storelink {
    margin-bottom: 1%;
 }
 
-#i {
-   color: #282829;
-   background: #fcde83;
-   border: 2px solid #282829;
-   padding: 10px 20px;
-   text-align: center;
-   text-decoration: none;
-   display: inline-block;
-}
-
-#i:hover{
-   background-color: #dfc472;
-}
 
 ul {
    text-align: left;
@@ -85,21 +89,47 @@ ul {
    margin: auto;
 
 }
-ol{
+
+ol {
    text-align: right;
-   display:inline-block;
+   display: inline-block;
    margin: auto;
 }
 
-p {
+figure {
    text-align: center;
-   margin-left: auto;
-   margin-right: auto;
+
 }
-figure{
+div.form{
+   margin: auto ;
+   width: 50%;
+   border-radius: 5px;
+   background-color: #f2f2f2;
+   padding: 5px;
+   text-align: center ;
+
+}
+
+input[type=text], input[type=message]{
+   width: 100%;
+   padding: 12px 20px;
+   margin: 8px 0;
+   box-sizing: border-box;
    text-align: center;
-   background-color:
+   
 }
+input[type=submit], input[type=reset]{
+  background-color: #fcde83;
+  color: #282829;
+  border: 2px solid #282829;
+  margin: 8px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  max-width: fit-content;
+}
+input[type=submit]:hover, input[type=reset]:hover {
+   background-color: #dfc472;
+ }
 
 table.center {
    margin-left: auto;
