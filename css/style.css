@@ -20,10 +20,13 @@ nav {
    z-index: 1;
 
 }
+nav.hover{
+   background-color: #ddd;
+   color: white;
+}
 
-p {
+p, dl {
    width: 700px;
-   text-align: center;
    margin-left: auto;
    margin-right: auto;
    font-size: large;
@@ -101,11 +104,14 @@ ul {
 
 }
 
+
 ol {
-   text-align: right;
+   width:400px;
    display: inline-block;
    margin: auto;
 }
+
+
 
 
 div.form {
