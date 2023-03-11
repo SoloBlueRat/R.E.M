@@ -1,7 +1,8 @@
 header {
-   padding: 2%;
+   padding: 1%;
    background-color: #fcde83;
    text-align: center;
+
    font-family: "Tilt Neon", "Monospace", Verdana, sans-serif;
 }
 
@@ -11,24 +12,31 @@ nav {
    background-color: #282829;
    font-size: 20px;
    font-weight: 100;
+   position: sticky;
+   top: 0;
    padding: 10px;
    text-align: center;
    font-family: "Tilt Neon", "Monospace", Verdana, sans-serif;
+   z-index: 1;
+
 }
 
 p {
+   width: 700px;
    text-align: center;
    margin-left: auto;
    margin-right: auto;
+   font-size: large;
+
 }
 
 h2 {
    background-color: #282829;
    color: white;
    width: 40%;
-   max-width: fit content;
    margin: auto;
    margin-top: 2%;
+   margin-bottom: 2%;
    text-align: center;
    border-radius: 20px;
    font-family: "Tilt Neon", "Monospace", Verdana, sans-serif;
@@ -45,7 +53,9 @@ a {
    font-size: 20px;
    letter-spacing: 3px;
 }
-#websitestore, #faq {
+
+#websitestore,
+#faq {
    color: #282829;
    background: #fcde83;
    border: 2px solid #282829;
@@ -56,25 +66,26 @@ a {
    cursor: pointer;
 }
 
+#websitestore:hover,
 #faq:hover {
    background-color: #dfc472;
 }
 
+footer {
 
-#footer {
    color: white;
    font-size: 15px;
    text-decoration: none;
    text-align: left;
+   clear: both;
+
 }
 
 div {
    color: #282829;
-}
-
-
-div.container {
+   margin-top: 20px;
    text-align: center;
+   width: 100%;
 }
 
 div.storelink {
@@ -96,45 +107,48 @@ ol {
    margin: auto;
 }
 
-figure {
-   text-align: center;
 
-}
-div.form{
-   margin: auto ;
+div.form {
+   margin: auto;
    width: 50%;
    border-radius: 5px;
    background-color: #f2f2f2;
    padding: 5px;
-   text-align: center ;
+   text-align: center;
 
 }
 
-input[type=text], input[type=message]{
+input[type=text],
+input[type=message] {
    width: 100%;
    padding: 12px 20px;
    margin: 8px 0;
    box-sizing: border-box;
    text-align: center;
-   
+
 }
-input[type=submit], input[type=reset]{
-  background-color: #fcde83;
-  color: #282829;
-  border: 2px solid #282829;
-  margin: 8px 10px;
-  border-radius: 5px;
-  cursor: pointer;
-  max-width: fit-content;
+
+input[type=submit],
+input[type=reset] {
+   background-color: #fcde83;
+   color: #282829;
+   border: 2px solid #282829;
+   margin: 8px 10px;
+   border-radius: 5px;
+   cursor: pointer;
+   max-width: fit-content;
 }
-input[type=submit]:hover, input[type=reset]:hover {
+
+input[type=submit]:hover,
+input[type=reset]:hover {
    background-color: #dfc472;
- }
+}
 
 table.center {
    margin-left: auto;
    margin-right: auto;
 }
+
 table,
 td,
 th {
