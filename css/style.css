@@ -1,24 +1,25 @@
+*{
+   font-family: "Tilt Neon", "Monospace", Verdana, sans-serif;
+   font-size: 20px;
+
+}
+
 header {
    padding: 1%;
    background-color: #fcde83;
    text-align: center;
 
-   font-family: "Tilt Neon", "Monospace", Verdana, sans-serif;
 }
 
 nav {
-   display: block;
    color: white;
    background-color: #282829;
-   font-size: 20px;
    font-weight: 100;
    position: sticky;
    top: 0;
    padding: 10px;
    text-align: center;
-   font-family: "Tilt Neon", "Monospace", Verdana, sans-serif;
    z-index: 1;
-
 }
 nav.hover{
    background-color: #ddd;
@@ -33,6 +34,9 @@ p, dl {
 
 }
 
+h1{
+   font-size: 40px;
+}
 h2 {
    background-color: #282829;
    color: white;
@@ -42,7 +46,7 @@ h2 {
    margin-bottom: 2%;
    text-align: center;
    border-radius: 20px;
-   font-family: "Tilt Neon", "Monospace", Verdana, sans-serif;
+   
 }
 
 h3 {
@@ -53,12 +57,11 @@ h3 {
 a {
    text-decoration: none;
    color: white;
-   font-size: 20px;
+
    letter-spacing: 3px;
 }
 
-#websitestore,
-#faq {
+#websitestore, li a {
    color: #282829;
    background: #fcde83;
    border: 2px solid #282829;
@@ -70,14 +73,12 @@ a {
 }
 
 #websitestore:hover,
-#faq:hover {
+li a:hover{
    background-color: #dfc472;
 }
 
 footer {
-
    color: white;
-   font-size: 15px;
    text-decoration: none;
    text-align: left;
    clear: both;
@@ -89,6 +90,8 @@ div {
    margin-top: 20px;
    text-align: center;
    width: 100%;
+   margin-left:auto;
+   margin-right: auto;
 }
 
 div.storelink {
@@ -103,6 +106,9 @@ ul {
    margin: auto;
 
 }
+li a{
+   color: #000;
+}
 
 
 ol {
@@ -110,8 +116,6 @@ ol {
    display: inline-block;
    margin: auto;
 }
-
-
 
 
 div.form {
