@@ -4,10 +4,10 @@ div {
     padding: 10px;
     float: left;
     width: 80%;
+    min-height: 400px;
     position: relative;
     left: 120px;
     margin: 10px 10px;
-    
 
 }
 .image{
