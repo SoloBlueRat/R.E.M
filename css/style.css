@@ -86,33 +86,35 @@ footer {
    clear: both;
 }
 
-div, .w3-container {
+div{
    color: #282829;
    margin-top: 20px;
-   text-align: center;
+   text-align: lecft;
    width: 100%;
    margin-left:auto;
    margin-right: auto;
    
 }
+div> ul{
+   text-align: left;
+   list-style-position: inside;
+   width: 30%;
+   margin-left:auto;
+   margin-right: auto;
+   
+}
+div > ol{
+   display: block;
+   text-align: left;
+   width: 20%;
+   margin-left:auto;
+   margin-right: auto;
+}
+
 
 div.storelink {
    text-align: center;
    margin-bottom: 1%;
-}
-
-
-ul {
-   text-align: left;
-   display: inline-block;
-   margin: auto;
-
-}
-
-ol {
-   width:400px;
-   display: inline-block;
-   margin: auto;
 }
 
 
