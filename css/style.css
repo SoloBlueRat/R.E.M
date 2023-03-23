@@ -37,6 +37,8 @@ p, dl {
 h1{
    font-size: 40px;
 }
+
+/* To prevent h2 from misaligned due to W3 override*/ 
 h2 {
    
    background-color: #282829;
@@ -63,7 +65,8 @@ a {
    letter-spacing: 3px;
 }
 
-#websitestore, li a {
+/* This will be used as buttons for store website link and hyperlink text box */
+.button, li a {
    color: #282829;
    background: #fcde83;
    border: 2px solid #282829;
@@ -75,26 +78,30 @@ a {
 }
 
 #websitestore:hover,
-li a:hover{
+li a:hover, .storelink a:hover{
    background-color: #dfc472;
 }
 
 footer {
    color: #282829;
    text-decoration: none;
-   
    clear: both;
 }
+
+/*This div will be my main design
+all text is aligned left while being centered of the page */
 
 div{
    color: #282829;
    margin-top: 20px;
-   text-align: lecft;
+   text-align: left;
    width: 100%;
    margin-left:auto;
    margin-right: auto;
    
 }
+/*Because of the design of div. the ul and ol will be the child of div parent. 
+It is still center and left aligned text without affecting the rest of div style  */
 div> ul{
    text-align: left;
    list-style-position: inside;
@@ -155,10 +162,6 @@ input[type=reset]:hover {
    background-color: #dfc472;
 }
 
-table.center {
-   margin-left: auto;
-   margin-right: auto;
-}
 
 table,
 td,
@@ -167,6 +170,8 @@ th {
    padding: 8px;
    text-align: center;
    border-collapse: collapse;
+   margin-left: auto;
+   margin-right: auto;
 
 }
 
@@ -184,4 +189,20 @@ th {
    text-align: center;
    background-color: #fcde83;
    color: black;
+}
+
+
+/*-------------This is the W3 editing area---------------- */ 
+/*-------------To configure that suits my style---------------- */ 
+/*--- Sometimes I need to overide it ---*/
+.w3-panel{
+   width: 70%;
+   
+}
+.w3-container{
+   width: 70%;
+}
+
+.w3-table-all{
+   width: 70% !important;
 }

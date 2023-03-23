@@ -1,71 +1,74 @@
 div {
-    box-sizing: content-box;
-    border-radius: 20px;
-    padding: 10px;
-    float: left;
-    width: 80%;
-    min-height: 400px;
-    position: relative;
-    left: 120px;
-    margin: 10px 10px;
+  box-sizing: content-box;
+  border-radius: 20px;
+  padding: 10px;
+  float: left;
+  width: 80%;
+  min-height: 480px;
+  position: relative;
+  left: 120px;
+  
+  margin: 20px 20px;
+  
 
 }
-.image{
-   
-   width: 40%;
-   background-color: gainsboro;
-   border: solid medium #282829;
+
+.image {
+  
+  width: 40%;
+  background-color: seashell;
+  border: solid medium #282829;
 }
 
 div.image>p {
-    width: 100%;
-    font-family: "Tilt Neon", "Monospace", Verdana, sans-serif;
+  
+  width: 80%;
+  font-family: "Tilt Neon", "Monospace", Verdana, sans-serif;
 }
 
 
 figure {
-    text-align: center;
-    margin: 20px;
-    font-family: "Tilt Neon", "Monospace", Verdana, sans-serif;
+  text-align: center;
+  margin: 20px;
+  font-family: "Tilt Neon", "Monospace", Verdana, sans-serif;
 }
 
 figure img {
-
-    height: 200px;
-    width: 200px;
-    margin-left: auto;
-    margin-right: auto;
+  height: 200px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 figcaption {
 
-    clear: both;
-    color: #2e6c85;
+  clear: both;
+  color: #2e6c85;
 }
 
 .topnav {
-    background-color: #333;
-    overflow: hidden;
-  }
-  
-  /* Style the links inside the navigation bar */
-  .topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  /* Change the color of links on hover */
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  /* Add a color to the active/current link */
-  .topnav a.active {
-    background-color: #04aa6d;
-    color: white;
-  }
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #04aa6d;
+  color: white;
+}
