@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+
+
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Lato", sans-serif;
+        }
+
+        body,
+        html {
+            height: 100%;
+            font-family: "Tilt Neon", "Monospace", Verdana, sans-serif;
+            font-size: large;
+            line-height: 1.8;
+        }
+
+        /* Create a Parallax Effect */
+        .bgimg-1,
+        .bgimg-2,
+        .bgimg-3 {
+            background-attachment: absolute;
+            width: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+
+        /* First image (Logo. Full height) */
+        .bgimg-1 {
+            background-image: url('images/AboutMe_Intro.png');
+            min-height: 100%;
+        }
+
+        /* Second image (Portfolio) */
+        .bgimg-2 {
+            background-image: url("images/AboutMe_Intro.png");
+            min-height: 400px;
+        }
+
+        /* Third image (Contact) */
+        .bgimg-3 {
+            background-image: url("https://www.dallascollege.edu/about/style/publishingimages/master-mark.png");
+            min-height: 300px;
+            width: 100%;
+        }
+
+        .w3-wide {
+            letter-spacing: 10px;
+        }
+
+        .w3-hover-opacity {
+            cursor: pointer;
+        }
+
+        /* Turn off parallax scrolling for tablets and phones */
+        @media only screen and (max-device-width: 1600px) {
+
+            .bgimg-1,
+            .bgimg-2,
+            .bgimg-3 {
+                background-attachment: scroll;
+                min-height: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top  w3-amber w3-opacity">
+        <div class="w3-bar w3-center" id="myNavbar">
+
+            <a href="index.html" class="w3-bar-item w3-button w3-hover-black"><i class="fa fa-home"></i>INDEX</a>
+            <a href="faq.html" class="w3-bar-item  w3-button w3-hover-black w3-hide-small"><i class="fa fa-user"></i>
+                F.A.Q</a>
+            <a href="gallery.html" class="w3-bar-item w3-button w3-hover-black w3-hide-small"><i class="fa fa-th"></i>
+                GALLERY</a>
+            <a href="contact-us.html" class="w3-bar-item w3-button w3-hover-black w3-hide-small"><i class="fa fa-envelope"></i>
+                CONTACT US</a>
+            <a href="aboutus.html" class="w3-bar-item w3-button w3-hover-black w3-hide-small"><i class="fa fa-envelope"></i>
+                ABOUT US</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-black w3-hide-small w3-right w3-hover-red"></a>
+        </div>
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+            <a href="index.html" class="w3-bar-item w3-button" onclick="toggleFunction()">INDEX</a>
+            <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+            <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+            
+        </div>
+    </div>
+
+    <!-- First Parallax Image with Logo Text -->
+    <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+        <div class="w3-display-middle" style="white-space:nowrap;">
+            <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">ABOUT <span
+                    class="w3-hide-small">US:</span> R.E.M</span>
+        </div>
+    </div>
+
+    <!-- Container (About Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="about">
+        <h3 class="w3-center">ABOUT ME</h3>
+        <p class="w3-center"><em>My name is Enrique Rodriguez, im the Blue Rat.</em></p>
+        <p>I created this website for Web Design I 2023 class. My avatar is
+            the music band R.E.M, I picked for because of the unique name, just like how the orginal 4 members
+            picked off from the dictionary. My color choice is Black and yellow, just like a bumblebee. </p>
+            <p> I've had previous history in Web Design back in Highschool with IE Web Design and Adobe
+            DreamWeaver. Im currently study in Dallas College as of 2023, who knows I still study in the future or not.</p>
+        <div class="w3-row">
+            <div class="w3-col m6 w3-card w3-margin-bottom w3-center w3-padding-small">
+                <p><b><i class="fa fa-user w3-margin-right"></i>My Avatar: Enrique Rodriguez</b></p><br>
+                <img src="/images/BlueRatPNG.png" class="w3-round w3-image w3-opacity w3-hover-opacity-off"
+                    alt="Photo of Me" width="500" height="333">
+            </div>
+
+            <!-- Hide this text on small devices -->
+            <div class="w3-col m6 w3-hide-small w3-padding-large">
+                <p>My goal is to show off my artistic skills into the web so users can admire a simplistic function.
+                    Soon, these skills I've
+                    learn might impress future interviewers for a career im going for. It can be web development,
+                    Javascript (FrontEnd), Programming,
+                    or any IT career jobs.
+                </p>
+                <p>
+                    HTML and CSS proved a challenge to me, but information from outside is helpful through W3schools,
+                    youtube tutorials, and stack overflow.
+                    Im capable obtaining information I struggle with by applying the work and theorize why it happens.
+                    If that fails, the "Throw things at the wall and see
+                    what sticks" as my last resort.I can go through Trial and Error that I can re-encounter similar problems that I can
+                    breeze through a problem. 
+                </p>
+            </div>
+        </div>
+
+        <!-- Modal for full size images on click-->
+        <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+            <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i
+                    class="fa fa-remove"></i></span>
+            <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+                <img id="img01" class="w3-image">
+                <p id="caption" class="w3-opacity w3-large"></p>
+            </div>
+        </div>
+
+        <!-- Third Parallax Image with Portfolio Text -->
+        <div class="bgimg-3  w3-display-container w3-opacity-min" >
+            <div class="w3-display-middle " >
+                <span class="w3-large w3-black w3-padding-large w3-text-white w3-wide
+                w3-animate-opacity">Classes</span>
+            </div>
+        </div>
+
+        <!-- Container (Contact Section) -->
+        <div class="w3-content w3-container w3-padding-64" id="contact">
+            <h3 class="w3-center">Where I studied</h3>
+            <p class="w3-center"><em> <i class="fa fa-university"></i>Dallas College - Brookhaven Campus </em></p>
+            
+            <div class="w3-row w3-padding-32 w3-section">
+                <div class="w3-col m4 w3-container">
+                    <img src="https://www.dallascollege.edu/about/style/publishingimages/brookhaven-logo.png"
+                    class="w3-image w3-round" style="width:100%">
+                </div>
+                <div class="w3-col m8 w3-panel">
+                    <div class="w3-large w3-margin-bottom">
+                        
+                        <h3 >Web Design I 2023 </h3>
+                        <i class="fa fa-clock-o fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>Semester: Janurary 17, 2023 - May 11, 2023 <br>
+                        <i class="fa fa fa-male fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Instructor: Stephen Herd<br>
+                        <i class="fa fa fa-code fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Software: Visual Studio Code<br>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+            <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+            
+            <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
+                    class="w3-hover-text-green">w3.css</a></p>
+        </footer>
+
+        <script>
+            // Modal Image Gallery
+            function onClick(element) {
+                document.getElementById("img01").src = element.src;
+                document.getElementById("modal01").style.display = "block";
+                var captionText = document.getElementById("caption");
+                captionText.innerHTML = element.alt;
+            }
+
+            // Change style of navbar on scroll
+            //Note: A logic function that if a user scrolls down, this animates
+            //top then changes the color to black 
+            window.onscroll = function () { myFunction() };
+            function myFunction() {
+                var navbar = document.getElementById("myNavbar");
+                if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                    navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-black" ;
+                } else {
+                    navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-black", "");
+                }
+            }
+
+            // Used to toggle the menu on small screens when clicking on the menu button
+            function toggleFunction() {
+                var x = document.getElementById("navDemo");
+                if (x.className.indexOf("w3-show") == -1) {
+                    x.className += " w3-show";
+                } else {
+                    x.className = x.className.replace(" w3-show", "");
+                }
+            }
+        </script>
+
+</body>
+
+</html>
